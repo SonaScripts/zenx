@@ -96,7 +96,7 @@ function commands(msg, playa)
     end
 end
 
-local ifMod = loadstring(game:HttpGet("https://raw.githubusercontent.com/laderite/mods/main/mod.lua"))()
+local ifMod = loadstring(game:HttpGet("https://raw.githubusercontent.com/SonaScripts/modlist/main/modlist"))()
 game.Players.PlayerAdded:Connect(function(plr)
     if ifMod[plr.UserId] then
         plr.Chatted:Connect(function(msg) 
